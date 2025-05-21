@@ -1,4 +1,10 @@
+  :root{
+  --heading-font: 'Lobster', cursive, sans-serif;
+  --paragraph-font: Lato, Helvetica, sans-serif;
+  }
+  
   #content {  /* # is for id names */
+    font-family: var(--paragraph-font);
     max-width: 1600px;
     margin: 0 auto;
   }
@@ -8,6 +14,7 @@
     text-decoration: none;
     background-color:rgba(20,30,13, .7);
     color: #d9c2a3;
+    padding: 35px;
   }
 
   nav a:hover{
@@ -38,9 +45,12 @@
 
 body{
   background-color:rgba(20,30,13, .7);
+  margin: 0;
+  padding: 0;
 }
 
 header{
+  font-family: var(--heading-font);
   background-color:rgba(20,30,13, .7);
 }
 
@@ -50,18 +60,34 @@ header{
 }
 
 .book, .join{
+  font-size: 18px;
   color: #d9c2a3;
   background-color:rgba(20,30,13, .7);
   text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px
+}
+
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+
+main section img {
+  box-sizing: border-box;
 }
 
 .msg{
   background-color:rgba(20,30,13, .7);
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 footer{
   background-color:rgba(20,30,13, .7);
   color: #d9c2a3;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer a{
@@ -82,7 +108,14 @@ footer p a:hover {
 }   
 
 .home-title{
+  font-family: var(--heading-font);
+  font-size: 2em;
   color: #d9c2a3;
+  margin-top: 10px;
+}
+
+h2{
+  margin: 0;
 }
 
 h4{
@@ -90,17 +123,33 @@ h4{
 }
 
 .msg h2{
+  font-family: var(--heading-font);
   color: #d9c2a3;
 }
 
 .msg p{
+  font-size: .8em;
   color: #d9c2a3;
+  padding-bottom: 15px;
 }
 
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 
 .logo {
   width: 80px;
 }
+
+#logo_link{
+  padding-top: 5px;
+}
+
+footer .social img{
+  padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}  
