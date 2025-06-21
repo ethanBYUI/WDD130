@@ -279,3 +279,55 @@ footer .social img{
       margin-top: 25px;
   }
 }
+
+
+/* === Testimonies Page Styles === */
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  padding: 40px;
+  background-color: white;
+}
+
+.main-testimony img {
+  width: 100%;
+  height: auto;
+  border: 10px solid #d9c2a3;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.testimonies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonies h2 {
+  font-family: var(--heading-font);
+  font-size: 1.8em;
+  color: #6f7364;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimony {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimony img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 5px solid #d9c2a3;
+  margin-right: 15px;
+  box-shadow: 2px 2px 5px #6f7364;
+}
+
+.testimony p {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  color: #333;
+}
